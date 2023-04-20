@@ -1,15 +1,20 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 /* Navbar styles */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background-color: #333;
-    color: #fff;
+    background-color: #131514;
+    color: #d0d0d0;
 }
 
 nav img {
-    width: 50px;
+    width: 12em;
 }
 
 nav ul {
@@ -36,6 +41,7 @@ nav a:hover {
 }
 
 /* Hero section styles */
+
 .hero {
     display: flex;
     flex-direction: column;
