@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS*/
+
+body{
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: auto;
+}
+
+.hero img{
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.menu{
+    display: inline-flex;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+}
+
+.menu ul{
+    display: inline-flex;
+    gap: 75px;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: #000000a1;
+    padding: 15px;
+    border-radius: 60px;
+}
+
+.menu ul li{
+    font-size: 16px;
+    font-weight: 700;
+    font-variant: small-caps;
+    color: white;
+    cursor: pointer;
+}
+
+.titles{
+    position: absolute;
+    top: 190px;
+    width: 50%;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    left: 66px;
+}
+
+.titles h1{
+    font-size: 80px;
+    font-weight: 900;
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+.titles p{
+    font-size: 24px;
+    display: inline-flex;
+    color: yellow;
+    width: 75%;
+}
+
+.buttons{
+    position: absolute;
+    left: 66px;
+    bottom: 290px;
+    display: inline-flex;
+    gap: 40px;
+}
+
+.learn-more{
+    border: 1px solid greenyellow;
+    background-color: #adff2f3d;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #38ff00;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    width: 140px;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-us{
+    border: 1px solid greenyellow;
+    background-color: greenyellow;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #18502a;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    width: 140px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-tips{
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.card-tips article{
+    display: inline-flex;
+    width: 30%;
+    background-color: white;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.card-tips img{
+    width: 40%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.card-tips h3{
+    color: #426c01;
+    font-size: 32px;
+    font-weight: 800;
+    padding: 32px;
+}
+
+.main{
+    background-color: #f1f1f1;
+}
+
+h2{
+    text-align: center;
+    font-size: 88px;
+    padding: 50px;
+    color: #71680f75;
+    font-weight: 600;
+}
+
+.newsletter{
+    background-color: #18502a;
+    margin-top: 50px;
+    padding: 5%;
+    /* margin: 0 auto; */
+    /* display: block; */
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.newsletter h3{
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    width: 72%;
+    padding: 10px;
+}
+
+.newsletter p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    width: 50%;
+    color: white;
+}
+
+.newsletter form{
+    display: inline-flex;
+    width: 70%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.newsletter form input{
+    width: 54%;
+    border: 3px solid greenyellow;
+    border-radius: 4px;
+    height: 35px;
+    background-color: #ffffff26;
+}
+
+::placeholder{
+    color: white;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.newsletter form button{
+    border: 1px solid greenyellow;
+    background-color: greenyellow;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #18502a;
+    font-weight: 600;
+    cursor: pointer;
+    width: 183px;
+    height: 40px;
+}
+
+
