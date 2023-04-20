@@ -1,0 +1,16 @@
+#grilla-card{
+    display: flex;
+    flex-direction: row;
+}
+/*.card{
+  margin: 0% auto;  
+  display: flex;
+    flex-direction: row;
+}*/
+#news-letter{
+    max-width: 100%;
+}
+#call-to-action{
+    display: flex;
+    align-items: center;
+}
