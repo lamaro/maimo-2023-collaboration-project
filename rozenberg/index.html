@@ -4,11 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi página</title>
+    <title>Cuarteto de Nos</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <!--Header-->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#hero"><img src="assets/images/logo.svg" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="#biografia">Biografía</a></li>
+                <li><a href="#discografia">Discografía</a></li>
+                <li><a href="#conciertos">Conciertos</a></li>
+                <li><a href="newsletter">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Hero-->
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1>Cuarteto de Nos</h1>
+                <p>Banda de rock alternativo originaria de Montevideo, Uruguay.</p>
+                <a href="#discografia" class="btn-primary">Escuchá nuestra música</a>
+            </div>
+        </section>
+        <!-- Discografía -->
+        <section id="discografia" class="discografia">
+            <div class="container">
+                <h2>Discografía</h2>
+                <div class="card-container">
+                    <article class="card">
+                        <img src="https://i.pinimg.com/originals/93/77/f0/9377f0ba18d3268c109711252ecdaecb.jpg" alt="Habla tu espejo">
+                        <div class="card-info">
+                            <h3>Habla tu espejo</h3>
+                            <p>2014</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://i.pinimg.com/originals/ee/6e/d3/ee6ed3f751be384cbe148109feac7d4d.jpg" alt="Raro">
+                        <div class="card-info">
+                            <h3>Raro</h3>
+                            <p>2006</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://i.pinimg.com/originals/96/18/fb/9618fbdd48c5993a52203a1442efded9.jpg" alt="Porfiado">
+                        <div class="card-info">
+                            <h3>Porfiado</h3>
+                            <p>2005</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Discografía -->
+        <!-- Newsletter -->
+        <section id="newsletter" class="newsletter">
+            <div class="container">
+                <h2>Newsletter</h2>
+                <p>¡Suscríbete a nuestro newsletter para recibir noticias y novedades sobre el Cuarteto de Nos!</p>
+                <form>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </section>
+        <!-- Call to action -->
+        <section class="cta">
+            <div class="container">
+                <h2>¿Quieres saber más sobre nosotros?</h2>
+                <a href="#biografia" class="btn-primary">Lee nuestra biografía</a>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Cuarteto de Nos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
