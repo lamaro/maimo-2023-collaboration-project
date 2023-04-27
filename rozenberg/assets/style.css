@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav .logo img {
+    height: 3rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 1.5rem;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #444;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #111;
+}
+
+.hero {
+    background-image: url("https://i1.wp.com/lavereda.com.ar/wp-content/uploads/2021/05/cuarteto-de-nos.jpg?zoom=1.25&fit=1004%2C565&ssl=1");
+    background-position: center auto;
+    background-size: cover;
+    text-align: center;
+    padding: 10rem 0;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #ff2d55;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e60039;
+}
+
+.grilla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    width: 300px;
+}
+
+.card-info{
+    padding: 0.5rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.newsletter {
+    background-color: #f2f2f2;
+    padding: 5rem 0;
+}
+
+.newsletter h2 {
+    margin: 0 0 2rem;
+}
+
+.newsletter label {
+    display: block;
+    margin: 1rem 0;
+}
+
+.newsletter input[type="email"] {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.newsletter button[type="submit"] {
+    background-color: #ff2d55;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    border: none;
+    font-size: 1rem;
+}
+
+.newsletter button[type="submit"]:hover {
+    background-color: #e60039;
+}
+
+.cta {
+    background-color: #ff2d55;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.cta h2 {
+    margin: 0 0 2rem;
+}
+
+.cta .btn-primary {
+    margin-top: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .grilla {
+        margin: 2rem 0;
+    }
+
+    .card {
+        margin: 1rem 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .newsletter input[type="email"] {
+        margin-bottom: 1rem;
+    }
+
+    .newsletter button[type="submit"] {
+        font-size: 0.9rem;
+    }
+}
