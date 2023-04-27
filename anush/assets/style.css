@@ -1,5 +1,4 @@
-
-
+/*-------------------GENERAL-------------------*/
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
     margin: 20px 0;
@@ -24,6 +23,13 @@ li{
   font-size: 1.2em;
 }
 
+h3{
+  margin-bottom: 1.5em;
+}
+/*--------------FIN DE GENERAL--------------*/
+
+
+
 /*-------------------MENÚ-------------------*/
 nav{
   background: white;        
@@ -43,14 +49,40 @@ nav a:hover{
   color:rgb(56, 94, 69);
   text-decoration: underline;
 }
-/*----------------FIN DE MENÚ----------------*/
 
 a, span{
-    color:rgb(110, 138, 124);
-    text-decoration: none;
+  color:rgb(110, 138, 124);
+  text-decoration: none;
 }
 
+/*----------------FIN DE MENÚ----------------*/
 
+
+/*----------------HERO----------------*/
+.hero {
+  margin: 1em 0 0 0;
+  background-image: url(img/hero.png);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+  
+.hero-content {
+  margin-bottom: 22em;
+  color: white;
+  text-align: center;
+}
+  
+.hero h1 {
+  font-size: 3em;
+  font-weight: bolder;
+}
+/*----------------FIN DE HERO----------------*/
+
+
+/*----------------CARD GRID----------------*/
 .card-title{
     font-weight: bold;
 }
@@ -63,10 +95,6 @@ a, span{
     color:rgb(158, 162, 160);
 }
 
-h3{
-    margin-bottom: 1.5em;
-}
-
 #card-grid{
     background-color: rgb(110, 138, 124);
     padding: 3em;
@@ -76,76 +104,56 @@ h3{
 #card-grid h3{
   text-align: center;
 }
+/*----------------FIN DE CARD GRID----------------*/
 
 
-  .hero {
-    margin: 1em 0 0 0;
-    background-image: url(img/hero.png);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .hero-content {
-    margin-bottom: 22em;
-    color: white;
-    text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 3em;
-    font-weight: bolder;
-  }
-
-  .botones{
-    display: flex;
-  }
-
-  .nl, .cta {
-    padding: 4em 3em;
-   background-color:rgb(212, 212, 212);
-   width: 50%;
-  }
-
-  .nl h3, .cta h3{
-    color:rgb(110, 138, 124);
-  }
-  
-  .nl p, .cta p {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 40px;
-  }
-  
-  .nl input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-  }
-  
-  .nl button[type="submit"], .cta-btn {
-
-    background-color: rgb(110, 138, 124);
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-  }
-
-
-
-.cta {
-    background-color: #f2f2f2;
+/*--------NEWSLETTER - CALL TO ACTION--------*/
+.botones{
+  display: flex;
 }
 
+.nl, .cta {
+  padding: 4em 3em;
+  background-color:rgb(212, 212, 212);
+  width: 50%;
+}
+
+.nl h3, .cta h3{
+  color:rgb(110, 138, 124);
+}
+  
+.nl p, .cta p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+}
+  
+.nl input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+  
+.nl button[type="submit"], .cta-btn {
+  background-color: rgb(110, 138, 124);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta {
+  background-color: #f2f2f2;
+}
+/*----FIN DE NEWSLETTER - CALL TO ACTION----*/
+
+
+/*----------------FOOTER----------------*/
 footer {
   background-color: #333;
   color: #fff;
@@ -186,6 +194,7 @@ aside ul{
     padding-left: 35px;
     background-repeat: no-repeat;
 }
+/*----------------FIN DE FOOTER----------------*/
 
   
   
