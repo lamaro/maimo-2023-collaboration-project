@@ -180,6 +180,22 @@ p {
   height: 410px;
 }
 
+.noticias3 {
+  overflow: hidden;
+  width: 600px;
+  height: 500px;
+  border: 2px solid #ffffff;
+  float: right;
+}
+
+.noticias4 {
+  overflow: hidden;
+  width: 842px;
+  height: 500px;
+  background-color: rgb(12, 12, 99);
+  border: 2px solid #ffffff;
+  float: left;
+}
 
 /*
 .noticias1 img {
