@@ -116,7 +116,7 @@ body{
 .buttons{
     position: absolute;
     left: 66px;
-    bottom: 290px;
+    bottom: 185px;
     display: inline-flex;
     gap: 40px;
 }
