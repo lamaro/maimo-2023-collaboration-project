@@ -1,0 +1,203 @@
+/*-----------GENERAL--------------*/
+body {
+    font-family: 'Nunito', sans-serif!important;
+    font-size: 16px;
+    background-color: #F8DCC3;
+  }
+/* Remove list styles on ul, ol elements with a class attribute */
+ul, ol {
+  list-style-type: none;
+}
+a{
+  text-decoration: none;    
+ }
+h2{
+  font-family: 'Englebert', sans-serif;
+  text-align: center;
+}
+header{
+  position: fixed; 
+  width: 100%;
+  z-index: 10000;
+}
+main{
+  background-color: #F8DCC3;
+}
+footer, #found{
+  color: #F8DCC3;
+  background-color: #212529;
+  padding: 1em;
+  text-align: center;
+}
+footer h3 {
+ font-size: 1em;
+}
+footer .redes{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+footer .redes li{
+  margin: 0 0.5rem;
+}
+footer .redes li a{
+  color: #F8DCC3;
+  font-size: 22px;
+}
+footer .redes li a:hover{
+  opacity: 0.6;
+}
+
+/*-----------HOME--------------*/
+
+#home{
+  text-align: center;
+  background-image: url(image/fondo.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+#home .container{
+  height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home article a img {
+  min-width: min-content;
+  background-color: black;
+  padding:1em;
+  padding-top: 1.75em;
+  box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.7);
+}
+
+/*-----------ABOUT US--------------*/
+
+#sirena{
+  min-height: 100%;
+  width: 100%; 
+  background-image: url(image/sirenita.png) ;
+  background-repeat: no-repeat;
+  background-size: 40em;
+  background-attachment: fixed;
+}
+#black{
+  background-color: #212529;
+}
+#black h2 {
+  color: #F8DCC3;
+  width: 70%;
+  text-align: left;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+#about p{
+  width: 70%;
+  background-color: #F8DCC3;
+  border-radius: 25px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+/*-----------GALlERY--------------*/
+
+#gallery{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+#gallery img{
+  height: 500px;
+  width: 300px;
+  margin: 1em 0;
+}
+#gallery article {
+  padding: 2em;
+  display: inline;
+}
+#gallery img:hover {
+  opacity:50%;
+  transition:0.3s;
+  filter:grayscale(50%);
+  cursor: pointer;
+}
+
+/*-----------CONTAC US--------------*/
+
+
+form{
+  text-align: center;
+  padding: 1em;
+}
+form div{
+  text-align: left;
+}
+form h4{
+  font-size: 18px;
+ 
+}
+#btnContacto{
+  border:0.1em solid #212529;
+  background-color: #000;
+  color:#F8DCC3;
+  display: block;
+  max-width: 170px;
+  margin: auto;
+  margin-top: 2em;
+  padding: .9em 1em;
+  border-radius: 50px;
+}
+#btnContacto:hover{
+  transition: 0.3s;
+  border:0.1em solid #212529;
+  background-color: #F8DCC3;
+  color:#000;
+  display: block;
+  max-width: 170px;
+  margin: auto;
+  margin-top: 2em;
+  padding: .9em 1em;
+  border-radius: 50px;
+}
+form .form-control, .form-select{
+  text-align: center;
+  background-color: transparent!important;
+  border: 1px solid #212529!important;
+  border-radius: 25px;
+  margin: 0.7em 0;
+}
+
+
+
+/*-------------MEDIA QUERY------------*/
+@media screen and (max-width:700px) {
+  #gallery{
+    flex-direction: column;
+  }
+  #home img, #aleatorio img{
+    max-width: 100%;
+    min-width: 0!important;
+  }
+  
+  #sirena{
+    min-height: 400px;
+    background-size: cover;
+  }
+  #about p{
+    width: 100%;
+  }
+  #about h2{
+    text-align: center;
+  }
+  #about #black{
+    padding: 1rem;
+
+  }
+  #contact img{
+    max-width: 200px;
+  }
+}
+
+
+
+

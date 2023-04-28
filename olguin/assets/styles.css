@@ -1,0 +1,148 @@
+body{
+    background-color: aquamarine;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    width: 95%;
+    height: 3em;
+    background-color: white;
+    border-radius: 2em;
+    padding: 1em 1.5em;
+}
+
+.navbar-item{
+    float: right;
+    padding: 0 1em;
+    font-size: 1.1em;
+    padding-top: 0.75em;
+    height: 100%;
+}
+
+
+#hero{
+    width: 100%;
+    background-image: url("img/dia_de_la_milanesa_en_argentina.jpg");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top: 1em;
+}
+
+
+.hero-contenedor h1{
+    font-size: 4em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0.2em;
+    color: rgb(10, 152, 31);
+
+}
+.hero-contenedor{
+    padding: 0.5em;
+}
+.hero-contenedor p{
+    font-size: 1.5em;
+    color: rgb(98, 16, 16);
+}
+
+
+#tags-tienda{
+    width: 95%;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 1em;
+    border-radius: 2em;
+    margin-top: 2em;
+}
+
+.tarjeta-tienda{
+    width: 20em;
+    background-color: rgb(221, 187, 137);
+    color: white;
+    padding: 3em;
+    border-radius: 2em;
+}
+.tarjeta-tienda img{
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+}
+
+.tarjeta-tienda h3{
+    margin-bottom: 1.25em;
+}
+
+.contenedor-tienda{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.boton{
+    background-color: bisque;
+    padding: 1em 2em;
+    color: black;
+    border-radius: 2em;
+}
+
+#entra-tienda{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.tienda-call{
+    width: 40vw;
+    background-color: beige;
+    text-align: center;
+    padding: 2em;
+    border-radius: 3em;
+}
+
+.tienda-call h1{
+    margin-bottom: 1.5em;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 2em;
+
+}
+
+#footer-links{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5em;
+    border-left: 1px solid;
+}
+
+#footer-logo{
+    padding-right: 5em;
+}
+#form-contacto{
+    width: 90vw;
+    background-color: rgb(115, 79, 34);
+    padding: 2em;
+    margin-top: 1em;
+    color: white;
+}
+
+#form-contacto input{
+    border-radius: 2em;
+    padding: 0.5em;
+}
+
+#form-contacto button{
+    border-radius: 2em;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+}
