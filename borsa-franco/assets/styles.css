@@ -124,30 +124,54 @@ table {
 }
 
 /*CSS*/
-body {
-  font-family: "Montserrat", sans-serif;
+
+/* fonts */
+@font-face {
+  font-family: "Geometria";
+  src: url("fonts/geometria-webfont.woff") format("woff"),
+    url("fonts/geometria-webfont.woff2") format("woff2");
 }
-nav {
+
+@font-face {
+  font-family: "GeometriaMedium";
+  src: url("fonts/geometria-medium-webfont.woff") format("woff"),
+    url("fonts/geometria-medium-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GeometriaBold";
+  src: url("fonts/geometria-bold-webfont.woff") format("woff"),
+    url("fonts/geometria-bold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GeometriaHeavy";
+  src: url("fonts/geometria-heavy-webfont.woff") format("woff"),
+    url("fonts/geometria-heavy-webfont.woff2") format("woff2");
+}
+/* fonts */
+
+body {
+  font-family: "Geometria", sans-serif;
+}
+header nav {
   display: inline-flex;
   width: 100%;
   position: absolute;
   justify-content: center;
+  background-color: #2311006d;
 }
 
-nav ul {
+header nav ul {
   display: inline-flex;
   gap: 75px;
   justify-content: space-between;
-  margin-top: 10px;
-  background-color: #000000a1;
   padding: 15px;
-  border-radius: 60px;
 }
 
 nav ul li {
   font-size: 16px;
   font-weight: 700;
-  font-variant: small-caps;
   color: white;
   cursor: pointer;
 }
@@ -161,17 +185,36 @@ nav ul li {
 #hero img {
   object-fit: cover;
   max-width: 100%;
+  height: 100vh;
 }
 #hero h2 {
+  font-family: "GeometriaHeavy";
   color: aliceblue;
-  font-size: 5em;
+  font-size: 6em;
   display: inline-flex;
   position: absolute;
+  /* background-color: rgba(0, 0, 0, 0.277); */
+  padding: 0.2em 0.5em;
+  /* border-radius: 50%; */
+  /* font-variant: small-caps; */
 }
+.hero-cafe {
+  color: #231100;
+}
+.hero-lovers {
+  font-family: "Geometria";
+  color: #b25600;
+}
+
 /*CARDS*/
 #grilla-card {
   width: 100%;
   height: auto;
+  margin-top: 4em;
+}
+
+#grilla-card h2{
+  font-size: 2.5em;
 }
 
 .card-separate {
@@ -196,19 +239,26 @@ h2 {
   margin: 1em;
 }
 .img-card {
-  padding: 0.5em 1em 1em 0.5em;
-  border-radius: 15px;
+  /* padding: 0.5em 1em 1em 0.5em; */
+  border-radius: 15px 15px 0 0;
 }
 h3 {
-  font-weight: bold;
-  padding: 0.5em;
+  font-family: 'GeometriaMedium';
+  font-size: 1.5em;
+  margin-top: 1.5em;
+  margin-left: 1em;
+  margin-bottom: 0.5em;
 }
 .p-card {
   padding: 0.5em;
   font-size: 16px;
+  line-height: 1.725em;
+  margin-left: 1em;
+  margin-right: 0.5em;
+  margin-bottom: 1em;
 }
 .pie {
-  background: #6699ff;
+  background: #b25600;
   border-radius: 0 0 15px 15px;
   padding: 10px;
   text-align: center;
@@ -249,8 +299,8 @@ form button {
   width: 15%;
   text-decoration: none;
   color: white;
-  background: #6699ff;
-  border-color: #6699ff;
+  background: #b25600;
+  border-color: #b25600;
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
@@ -263,7 +313,17 @@ form button {
   height: auto;
   margin-top: 3em;
 }
-.btn-magia {
+
+/* footer */
+footer {
+  width: 100%;
+  height: 30vh;
+  background-color: #231100;
+  margin-top: 5em;
+}
+/* footer */
+
+/* .btn-magia {
   text-decoration: none;
   color: white;
   background: #6699ff;
@@ -275,15 +335,47 @@ form button {
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
   font-size: 24px;
-}
+} */
 /* how to video */
 /* #how-to-video{
     background-color: ;
 } */
 
-#how-to-video iframe{
-    margin-left: 10%;
-    width: 80vw;
-    height: 80vh;
+#how-to-video iframe {
+  margin-left: 10%;
+  width: 80vw;
+  height: 80vh;
 }
 /* how to video */
+
+/* responsive-mobile */
+
+@media only screen and (max-width: 600px) {
+  nav{
+    overflow: hidden;
+    position: relative;
+  }
+  .card-separate {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    width: 90%;
+    height: 70vh;
+    margin: 0 5% 5% 5%;
+  }
+
+  #hero img {
+    object-fit: cover;
+    max-width: 100%;
+  }
+  #hero h2 {
+    color: aliceblue;
+    font-size: 3.75em;
+    display: inline-flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+/* responsive-mobile */

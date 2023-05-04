@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Una Web</title>
+    <title>CaféLovers</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -13,17 +13,18 @@
   <body>
       <header>
           <nav>
-            <ul>
+            <ul id="nav-ul">
               <li>Hero</li>
               <li>Newsletter</li>
-              <li>Botón Mágico</li>
+              <li>Qué tomar</li>
             </ul>
+            <a href="javascript:void(0);" class="hamburguer" onclick="responsiveNav()">|||</a>
           </nav>
       </header>
       <main>
           <section id="hero">
             <img width="1600" height="500" src="assets/img/IMG_0985.jpg" alt="">
-            <h2>Hablemos de Café</h2>
+            <h2><span class="hero-cafe">Café</span> <span class="hero-lovers">Lovers</span></h2>
           </section>
 
           <section id="grilla-card">
@@ -53,7 +54,7 @@
           </div>
           </section>
           <section id="news-letter">
-            <h2>Conocé más sobre los cafe-lovers</h3>
+            <h2>Conocé más sobre los <span class="hero-cafe">Café</span><span class="hero-lovers">Lovers</span></h2>
             <p class="p-newletter">¡Recibí todos los domingos nuestro newsletter sobre tipos de café y descuentos! </p>
             <form>
               <input type="text" placeholder="quieromicafe@cafelover.com">
@@ -63,11 +64,26 @@
           <section id="how-to-video">
             <h2>Cómo hacer un buen expresso</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/xb3IxAr4RCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </section>
+          </section><!-- 
           <section id="call-to-action">
             <button class="btn-magia">Botón Mágico</button>
-          </section>
+          </section> -->
       </main>
-      <footer></footer>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="assets/app.js"></script>
   </body>
 </html>
