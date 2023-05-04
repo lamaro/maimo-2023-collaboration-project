@@ -56,6 +56,7 @@ body{
 .hero{
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 .hero img{
@@ -68,6 +69,7 @@ body{
     width: 100%;
     position: absolute;
     justify-content: center;
+    z-index: 1000;
 }
 
 .menu ul{
@@ -116,7 +118,7 @@ body{
 .buttons{
     position: absolute;
     left: 66px;
-    bottom: 185px;
+    bottom: 82px;
     display: inline-flex;
     gap: 40px;
 }
@@ -152,25 +154,24 @@ body{
 
 .card-tips{
     width: 100%;
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card-tips article{
-    display: inline-flex;
+    display: flex;
     width: 30%;
     background-color: white;
     border: 2px solid greenyellow;
     border-radius: 10px;
-    background-color: white;
 }
 
 .card-tips img{
-    width: 40%;
+    max-width: 100%;
     border-radius: 10px 0px 0px 10px;
 }
 
@@ -178,7 +179,7 @@ body{
     color: #426c01;
     font-size: 32px;
     font-weight: 800;
-    padding: 32px;
+    padding: 20px;
 }
 
 .main{
@@ -258,3 +259,66 @@ h2{
 }
 
 
+  @media (max-width: 1284px) {
+    .card-tips article{
+      width: 50%;
+      flex-wrap: nowrap;
+    }
+
+    .titles{
+        width: 70%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .card-tips article{
+      flex-wrap: nowrap;
+      width: 80%;
+    }
+
+    .titles{
+        top: 96px;
+        text-align: center;
+        width: 100%;
+        left: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .buttons{
+        gap: 17px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        left: 0px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .titles{
+        top: 56px;
+    }
+
+    .newsletter form{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .newsletter form input{
+        width: 100%;
+    }
+
+    .newsletter form button{
+        width: 100%;
+    }
+
+    .newsletter p{
+        width: 80%;
+    }
+
+    .newsletter h3{
+        width: 100%;
+    }
+}
