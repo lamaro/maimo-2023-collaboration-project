@@ -16,25 +16,26 @@
 
         <!-- Navbar con logo que tengan anchors en las secciones -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+          <div class="container-fluid">
             <a class="navbar-brand" href="#">
-              <img src="https://carthagebeauty.com/wp-content/uploads/2021/06/cropped-logo-carthage.png" height="40" class="d-inline-block align-top" alt="logo carthage">
-            </a>
-            <div class="navbar-collapse">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#hero"> New In</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#grid">Products</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#form">Information</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#CTA">Suscribe Now</a>
-                </li>
-              </ul>
-            
+                <img src="https://carthagebeauty.com/wp-content/uploads/2021/06/cropped-logo-carthage.png" height="40" class="d-inline-block align-top" alt="logo carthage">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#hero"> New In</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#grid">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#form">Information</a>
+                  </li>
+                </ul>
+              </div>  
             </div>
           </nav>
         <!--Section: Hero -->
@@ -91,9 +92,14 @@
         </section>
         <!--Section: Form  de newsletter -->
         <section id="form">
-            <form class="text-white bg-dark">
-                <h2  class = "text-white bg-dark">If you want more information about us and our products, let us know! </h2> 
+          <div class="container">
+            <div class="width50">
+              <img src="https://carthagebeauty.com/wp-content/uploads/2021/11/2b.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="width50">
+              <form class="text-white bg-dark"> 
                 <div class="form-group">
+                  <h2  class = "text-white bg-dark">If you want more information about us and our products, let us know! </h2>
                     <div class="row">
                         <div class="col">
                           <input type="text" class="form-control" placeholder="First name">
@@ -107,14 +113,27 @@
                           <label for="inputEmail4">Email</label>
                           <input type="email" class="form-control" id="inputEmail4">
                         </div>
+                      </div>
                 </div>
                 <button type="submit" class="btn btn-light">Submit</button>
               </form>
+            </div>
+          </div>
         </section>
         <!--Section: Call to action -->
-        <section id="CTA">
-            <form class="text-white bg-dark">
-                <h2>SUSCRIBE TO CARTHAGE'S NEWSLETTER </h2> 
+        
+        <!--Footer -->
+        
+        <footer class="text-white bg-dark">
+          <div class="line"></div>
+          <section id="CTA">
+            <div class="containerFooter">
+              <h5>Av. Córdoba 3515 1°C
+               <br> CP 1188 CABA, Argentina </h5> 
+              <div class="verticalLine">
+              </div>
+              <form class="text-white bg-dark width30">
+                <h5>SUSCRIBE TO CARTHAGE'S NEWSLETTER </h5> 
                 <div class="form-group">
                   <label for="exampleInputEmail1">Email address</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -122,11 +141,9 @@
                 </div>
                 <button type="submit" class="btn btn-light">Suscribe</button>
             </form>
+            </div>
+            
         </section>
-        <!--Footer -->
-        <footer class="text-white bg-dark">
-            <h2> </h2>
-           
         </footer>
         
         <!-- Bootstrap JS -->
