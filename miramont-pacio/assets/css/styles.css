@@ -1,0 +1,246 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Navbar styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #131514;
+    color: #d0d0d0;
+}
+
+nav img {
+    width: 12em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+/* Hero section styles */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-color: #ddd;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 50%;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Card grid styles */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
+    background-color: #f7f7f7;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #777;
+}
+
+/* Newsletter form styles */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+.newsletter input {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    background-color: #ddd;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.newsletter input:focus {
+    outline: none;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter button {
+    padding: 1rem 2rem;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.newsletter button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Call to action section styles */
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #f7f7f7;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cta button {
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #ddd;
+}

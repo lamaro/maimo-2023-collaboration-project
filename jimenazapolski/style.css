@@ -1,4 +1,51 @@
-body{
+body
+{
     padding: 4em;
     margin-bottom: 3em;
+}
+
+.center
+{
+    margin: 0 auto;
+}
+.container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    margin-top: 1em;
+}
+.width50
+{
+    width: 50%;
+    margin: 2em;
+}
+.line
+{
+    border-top: 1px solid rgb(255, 255, 255);
+    height: 2px;
+    padding: 1em;
+    margin: 1.2em auto 0 auto;
+}
+
+.verticalLine{
+    border-right: 1px solid rgb(255, 255, 255);
+    height: 8em;
+} 
+
+.containerFooter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.width30
+{
+    width: 30%;
+}
+footer
+{
+    margin-top: 6em;
+    font-size: 0.8em !important;
+    margin: 0 auto;
+    opacity: 0.6;
 }

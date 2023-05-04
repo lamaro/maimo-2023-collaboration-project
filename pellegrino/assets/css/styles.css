@@ -86,7 +86,7 @@ header {
 
 nav {
   background-color: rgb(0, 20, 199);
-  margin-left: 940px;
+  margin-left: 880px;
   margin-top: 20px;
 }
 
@@ -161,7 +161,50 @@ p {
   font-size: 20px;
 }
 
+.btn2 {
+  display: inline-block;
+  background-color: #0010c5;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 30px;
+  width: 530px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.btn3 {
+  display: inline-block;
+  background-color: #0010c5;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 30px;
+  width: 530px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+
 .btn:hover {
+  background-color: #ffe856;
+}
+
+.btn2:hover {
+  background-color: #ffe856;
+}
+
+.btn3:hover {
   background-color: #ffe856;
 }
 
@@ -196,6 +239,24 @@ p {
   border: 2px solid #ffffff;
   float: left;
 }
+
+
+.noticias5 {
+  overflow: hidden;
+  width: 613px;
+  height: 500px;
+  border: 2px solid #ffffff;
+  float: left;
+}
+
+.noticias6 {
+  overflow: hidden;
+  width: 830px;
+  height: 500px;
+  border: 2px solid #ffffff;
+  float: right;
+}
+
 
 /*
 .noticias1 img {
@@ -274,3 +335,1068 @@ p {
   }
   
   */
+
+
+  
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+
+{
+header {
+  display: flex;
+  background-color: rgb(0, 20, 199);
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  padding: 1px;
+  width: 600px;
+}
+
+.logo {
+  display: flex;
+  background-color:rgb(0, 20, 199);
+  height: 60px;
+}
+
+.logo img {
+  height: 55px;
+  background-color:rgb(0, 20, 199);
+}
+
+nav {
+  display: none;
+}
+
+.general {
+  margin:auto;
+  margin-top: 40px;
+  width: 375px;
+  height: 667px;
+  background-color:rgb(70, 95, 255) ;
+}
+
+.noticias1 {
+  overflow: hidden;
+  width: 190px;
+  height: 200px;
+  border: 1px solid #ffffff;
+}
+
+.noticias2 {
+  overflow: hidden;
+  width: 181px;
+  height: 200px;
+  background-color: rgb(12, 12, 99);
+  border: 1px solid #ffffff;
+  float: left;
+}
+
+.video {
+  display: none;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: rgb(237, 190, 36);
+  margin-left: 15px;
+  margin-top: 75px;
+  font-size: 20px;
+}
+
+p {
+  display: none;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0010c5;
+  color: #fff;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+  margin-left: 16px;
+  margin-top: 30px;
+  width: 130px;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background-color: #ffe856;
+}
+
+.noticias3 {
+  overflow: hidden;
+  width: 180px;
+  height: 200px;
+  border: 1px solid #ffffff;
+  float: left;
+}
+
+.noticias4 {
+  overflow: hidden;
+  width: 191px;
+  height: 200px;
+  background-color: rgb(12, 12, 99);
+  border: 1px solid #ffffff;
+  float: right;
+}
+
+.btn2 {
+  display: inline-block;
+  background-color: #0010c5;
+  color: #fff;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 30px;
+  width: 130px;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.btn3 {
+  display: inline-block;
+  background-color: #0010c5;
+  color: #fff;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 30px;
+  width: 130px;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background-color: #ffe856;
+}
+
+.btn2:hover {
+  background-color: #ffe856;
+}
+
+.btn3:hover {
+  background-color: #ffe856;
+}
+
+.noticias5 {
+ overflow: hidden;
+  width: 193px;
+  height: 200px;
+  border: 1px solid #ffffff;
+  float: right;
+}
+
+.noticias6 {
+  overflow: hidden;
+  width: 177px;
+  height: 200px;
+  background-color: rgb(12, 12, 99);
+  border: 1px solid #ffffff;
+}
+
+.festejo {
+  display: none;
+}
+
+.empateenarroyito {
+  display: none;
+}
+
+.triunfofrenteacademia {
+  display: none;
+}
+
+.festejo2 {
+  display: block;
+}
+
+.empate {
+  display: block;
+}
+
+.triunforacing2 {
+  display: block;
+}
+
+footer {
+  margin-top: 610px;
+  background-color: rgb(12, 12, 99);  
+  width: 600px;
+}
+
+.primerafila {
+  text-align: center;
+  background-color: rgb(12, 12, 99);
+  height: 30px;
+  margin-left: 20px;
+ }
+
+ .nav-footer {
+  font-size: 10px;
+  background-color: rgb(12, 12, 99);
+ }
+
+ .copyright {
+  text-align: center;
+  background-color: rgb(12, 12, 99);
+  font-size: 15px;
+ }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+  header {
+    display: flex;
+    background-color: rgb(0, 20, 199);
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+    padding: 1px;
+    width: 1450px;
+  }
+  
+  .logo {
+    display: flex;
+    background-color:rgb(0, 20, 199);
+    height: 90px;
+    margin-left: 15px;
+  }
+  
+  .logo img {
+    height: 100px;
+    background-color:rgb(0, 20, 199);
+  }
+  
+  nav {
+    display: none;
+  }
+
+  p {
+    display: none;
+  }
+
+  .video {
+    display: none;
+  }
+
+  .noticias1 {
+    overflow: hidden;
+    width: 775px;
+    height: 500px;
+    border: 1px solid #ffffff;
+  }
+
+  h1 {
+    font-family: sans-serif;
+    color: rgb(237, 190, 36);
+    margin-left: 30px;
+    margin-top: 140px;
+    font-size: 60px;
+  }
+
+  .noticias2 {
+    overflow: hidden;
+    width: 670px;
+    height: 500px;
+    background-color: rgb(12, 12, 99);
+    border: 1px solid #ffffff;
+    float: left;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #0010c5;
+    color: #fff;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 70px;
+    width: 700px;
+    font-family: sans-serif;
+    font-size: 35px;
+  }
+
+  .btn:hover {
+    background-color: #ffe856;
+  }
+
+  .noticias3 {
+    overflow: hidden;
+    width: 775px;
+    height: 500px;
+    border: 1px solid #ffffff;
+    float: left;
+  }
+  
+  .noticias4 {
+    overflow: hidden;
+    width: 670px;
+    height: 500px;
+    background-color: rgb(12, 12, 99);
+    border: 1px solid #ffffff;
+    float: right;
+  }
+
+  .btn2 {
+    display: inline-block;
+    background-color: #0010c5;
+    color: #fff;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 30px;
+    width: 700px;
+    font-family: sans-serif;
+    font-size: 35px;
+  }
+
+  .btn2:hover {
+    background-color: #ffe856;
+  }
+
+  .noticias5 {
+    overflow: hidden;
+     width: 775px;
+     height: 500px;
+     border: 1px solid #ffffff;
+     float: right;
+   }
+   
+   .noticias6 {
+     overflow: hidden;
+     width: 670px;
+     height: 500px;
+     background-color: rgb(12, 12, 99);
+     border: 1px solid #ffffff;
+   }
+
+   .btn3 {
+    display: inline-block;
+    background-color: #0010c5;
+    color: #fff;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 30px;
+    width: 700px;
+    font-family: sans-serif;
+    font-size: 35px;
+  }
+
+  .btn3:hover {
+    background-color: #ffe856;
+  }
+
+  .festejo {
+    display: none;
+  }
+  
+  .empateenarroyito {
+    display: none;
+  }
+  
+  .triunfofrenteacademia {
+    display: none;
+
+  }
+
+  .festejo2 {
+    display: none;
+  }
+
+  .empate2 {
+    display: none;
+  }
+
+  .triunforacing2 {
+    display: none;
+  }
+  
+  .festejo3 {
+    display: block;
+  }
+
+  .empate3 {
+    display: block;
+  }
+
+  .triunforacing3 {
+    display: block;
+  }
+
+  footer {
+    margin-top: 610px;
+    background-color: rgb(12, 12, 99);  
+    width: 1450px;
+  }
+  
+  .primerafila {
+    text-align: center;
+    background-color: rgb(12, 12, 99);
+    height: 30px;
+    margin-left: 20px;
+   }
+  
+   .nav-footer {
+    font-size: 15px;
+    background-color: rgb(12, 12, 99);
+   }
+  
+   .copyright {
+    text-align: center;
+    background-color: rgb(12, 12, 99);
+    font-size: 15px;
+   }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  header {
+    display: flex;
+    background-color: rgb(0, 20, 199);
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+    padding: 1px;
+    width: 1450px;
+  }
+  
+  .logo {
+    display: flex;
+    background-color:rgb(0, 20, 199);
+    height: 102px;
+    margin-left: 20px;
+  }
+  
+  .logo img {
+    height: 105px;
+    background-color:rgb(0, 20, 199);
+  }
+  
+  nav {
+    display: none;
+  }
+
+  .noticias1 {
+    overflow: hidden;
+    width: 720px;
+    height: 500px;
+    border: 1px solid #ffffff;
+  }
+
+  h1 {
+    font-family: sans-serif;
+    color: rgb(237, 190, 36);
+    margin-left: 30px;
+    margin-top: 95px;
+    font-size: 50px;
+  }
+
+  .noticias2 {
+    overflow: hidden;
+    width: 726px;
+    height: 500px;
+    background-color: rgb(12, 12, 99);
+    border: 1px solid #ffffff;
+    float: left;
+  }
+
+  p {
+    display: block;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: #0010c5;
+    color: #fff;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 640px;
+    font-family: sans-serif;
+    font-size: 35px;
+  }
+
+  .btn:hover {
+    background-color: #ffe856;
+  }
+
+  .noticias3 {
+    overflow: hidden;
+    width: 727px;
+    height: 500px;
+    border: 1px solid #ffffff;
+    float: left;
+  }
+  
+  .noticias4 {
+    overflow: hidden;
+    width: 718px;
+    height: 500px;
+    background-color: rgb(12, 12, 99);
+    border: 1px solid #ffffff;
+    float: right;
+  }
+
+  .btn2 {
+    display: inline-block;
+    background-color: #0010c5;
+    color: #fff;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 640px;
+    font-family: sans-serif;
+    font-size: 35px;
+  }
+
+  .btn2:hover {
+    background-color: #ffe856;
+  }
+
+  .noticias5 {
+    overflow: hidden;
+     width: 720px;
+     height: 500px;
+     border: 1px solid #ffffff;
+     float: right;
+   }
+   
+   .noticias6 {
+     overflow: hidden;
+     width: 726px;
+     height: 500px;
+     background-color: rgb(12, 12, 99);
+     border: 1px solid #ffffff;
+   }
+
+   .btn3 {
+    display: inline-block;
+    background-color: #0010c5;
+    color: #fff;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 640px;
+    font-family: sans-serif;
+    font-size: 35px;
+  }
+
+  .btn3:hover {
+    background-color: #ffe856;
+  }
+
+  .festejo {
+    display: block;
+  }
+
+  .empateenarroyito {
+    display: block;
+  }
+  
+  .triunfofrenteacademia {
+    display: block;
+  }
+
+  .festejo2 {
+    display: none;
+  }
+
+  .empate2 {
+    display: none;
+  }
+
+  .triunforacing2 {
+    display: none;
+  }
+  
+  .festejo3 {
+    display: none;
+  }
+
+  .empate3 {
+    display: none;
+  }
+
+  .triunforacing3 {
+    display: none;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  header {
+    display: flex;
+    background-color: rgb(0, 20, 199);
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+    padding: 1px;
+    width: 1460px;
+  }
+  
+  .logo {
+    display: flex;
+    background-color:rgb(0, 20, 199);
+    height: 90px;
+    margin-left: 15px;
+  }
+  
+  .logo img {
+    height: 90px;
+    background-color:rgb(0, 20, 199);
+  }
+  
+  nav {
+    display: block;
+    margin-left: 880px;
+    margin-top: 35px;
+  }
+
+
+  a {
+    text-decoration: none;
+    background-color:rgb(0, 20, 199);
+    color: rgb(255, 214, 48);
+    margin-right: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+  
+  nav a {
+    font-weight: 600px;
+    padding-right: 10px;
+  }
+  
+  nav a:hover {
+    color: #ffffff;
+  }
+
+  .noticias1 {
+    overflow: hidden;
+    width: 604px;
+    height: 500px;
+    border: 1px solid #ffffff;
+  }
+
+  h1 {
+    font-family: sans-serif;
+    color: rgb(237, 190, 36);
+    margin-left: 30px;
+    margin-top: 95px;
+    font-size: 45px;
+  }
+
+  .noticias2 {
+    overflow: hidden;
+    width: 842px;
+    height: 500px;
+    background-color: rgb(12, 12, 99);
+    border: 1px solid #ffffff;
+    float: left;
+  }
+
+  p {
+    display: block;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: #0010c5;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 500px;
+    font-family: sans-serif;
+    font-size: 25px;
+  }
+
+  .btn:hover {
+    background-color: #ffe856;
+  }
+
+  .noticias3 {
+    overflow: hidden;
+    width: 612px;
+    height: 500px;
+    border: 1px solid #ffffff;
+    float: left;
+  }
+  
+  .noticias4 {
+    overflow: hidden;
+    width: 834px;
+    height: 500px;
+    background-color: rgb(12, 12, 99);
+    border: 1px solid #ffffff;
+    float: right;
+  }
+
+  .btn2 {
+    display: inline-block;
+    background-color: #0010c5;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 500px;
+    font-family: sans-serif;
+    font-size: 25px;
+  }
+
+  .btn2:hover {
+    background-color: #ffe856;
+  }
+
+  .noticias5 {
+    overflow: hidden;
+     width: 600px;
+     height: 500px;
+     border: 1px solid #ffffff;
+     float: right;
+   }
+   
+   .noticias6 {
+     overflow: hidden;
+     width: 846px;
+     height: 500px;
+     background-color: rgb(12, 12, 99);
+     border: 1px solid #ffffff;
+   }
+
+   .btn3 {
+    display: inline-block;
+    background-color: #0010c5;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 500px;
+    font-family: sans-serif;
+    font-size: 25px;
+  }
+
+  .btn3:hover {
+    background-color: #ffe856;
+  }
+
+  .festejo2 {
+    display: none;
+  }
+
+  .empate2 {
+    display: none;
+  }
+
+  .triunforacing2 {
+    display: none;
+  }
+  
+  .festejo3 {
+    display: none;
+  }
+
+  .empate3 {
+    display: none;
+  }
+
+  .triunforacing3 {
+    display: none;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+header {
+    display: flex;
+    background-color: rgb(0, 20, 199);
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+    padding: 1px;
+    width: 1459px;
+  }
+  
+  .logo {
+    display: flex;
+    background-color:rgb(0, 20, 199);
+    height: 90px;
+    margin-left: 15px;
+  }
+  
+  .logo img {
+    height: 90px;
+    background-color:rgb(0, 20, 199);
+  }
+  
+  nav {
+    display: block;
+    margin-left: 860px;
+    margin-top: 35px;
+  }
+
+
+  a {
+    text-decoration: none;
+    background-color:rgb(0, 20, 199);
+    color: rgb(255, 214, 48);
+    margin-right: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+  
+  nav a {
+    font-weight: 600px;
+    padding-right: 10px;
+  }
+  
+  nav a:hover {
+    color: #ffffff;
+  }
+
+  p {
+    display: block;
+    font-size: 17px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: #0010c5;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 35px;
+    width: 500px;
+    font-family: sans-serif;
+    font-size: 25px;
+  }
+
+  .btn:hover {
+    background-color: #ffe856;
+  }
+
+  .noticias1 {
+    overflow: hidden;
+    width: 604px;
+    height: 500px;
+    border: 1px solid #ffffff;
+  }
+
+  h1 {
+    font-family: sans-serif;
+    color: rgb(237, 190, 36);
+    margin-left: 30px;
+    margin-top: 95px;
+    font-size: 45px;
+  }
+
+  .noticias2 {
+    overflow: hidden;
+    width: 842px;
+    height: 500px;
+    background-color: rgb(12, 12, 99);
+    border: 1px solid #ffffff;
+    float: left;
+  }
+
+  .noticias3 {
+    overflow: hidden;
+    width: 612px;
+    height: 500px;
+    border: 1px solid #ffffff;
+    float: left;
+  }
+  
+  .noticias4 {
+    overflow: hidden;
+    width: 834px;
+    height: 500px;
+    background-color: rgb(12, 12, 99);
+    border: 1px solid #ffffff;
+    float: right;
+  }
+
+  .btn2 {
+    display: inline-block;
+    background-color: #0010c5;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 500px;
+    font-family: sans-serif;
+    font-size: 25px;
+  }
+
+  .btn2:hover {
+    background-color: #ffe856;
+  }
+
+  .noticias5 {
+    overflow: hidden;
+     width: 600px;
+     height: 500px;
+     border: 1px solid #ffffff;
+     float: right;
+   }
+   
+   .noticias6 {
+     overflow: hidden;
+     width: 846px;
+     height: 500px;
+     background-color: rgb(12, 12, 99);
+     border: 1px solid #ffffff;
+   }
+
+   .btn3 {
+    display: inline-block;
+    background-color: #0010c5;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 500px;
+    font-family: sans-serif;
+    font-size: 25px;
+  }
+
+  .btn3:hover {
+    background-color: #ffe856;
+  }
+
+  .festejo2 {
+    display: none;
+  }
+
+  .empate2 {
+    display: none;
+  }
+
+  .triunforacing2 {
+    display: none;
+  }
+  
+  .festejo3 {
+    display: none;
+  }
+
+  .empate3 {
+    display: none;
+  }
+
+  .triunforacing3 {
+    display: none;
+  }
+
+  footer {
+    margin-top: 610px;
+    background-color: rgb(12, 12, 99);  
+  }
+
+ .primerafila {
+  text-align: center;
+  background-color: rgb(12, 12, 99);
+  height: 30px;
+  margin-left: 20px;
+ }
+
+ .nav-footer {
+  font-size: 15px;
+  background-color: rgb(12, 12, 99);
+ }
+
+ .copyright {
+  text-align: center;
+  background-color: rgb(12, 12, 99);
+  font-size: 15px;
+ }
+
+} 
+
