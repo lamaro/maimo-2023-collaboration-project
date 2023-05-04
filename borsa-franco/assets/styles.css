@@ -184,7 +184,7 @@ nav ul li {
 }
 #hero img {
   object-fit: cover;
-  max-width: 100%;
+  min-width: 100%;
   height: 100vh;
 }
 #hero h2 {
@@ -320,7 +320,35 @@ footer {
   height: 30vh;
   background-color: #231100;
   margin-top: 5em;
+  color: #ffff;
+  font-size: 20px;
 }
+
+footer ul{
+  margin-top: 2em;
+  display: flex;
+}
+
+i{
+  width: 20%;
+  height: auto;
+  z-index: 10;
+}
+
+footer ul li{
+  margin: 2em;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: #ffff;
+}
+
+footer ul li a :hover{
+  text-decoration: none;
+  color: #b25600;
+}
+
 /* footer */
 
 /* .btn-magia {
@@ -347,13 +375,30 @@ footer {
   height: 80vh;
 }
 /* how to video */
+/* queries para desktop */
+@media only screen and (min-width: 1080px) {
+  .hamburguer {
+    display: none;
+  }
+}
+/* queries para desktop */
 
 /* responsive-mobile */
 
 @media only screen and (max-width: 600px) {
-  nav{
+  header nav{
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    min-height: 8em;
+    line-height: 2em;
+    background-color: #23110000;
+  }
+  .hamburguer {
+    position: absolute;
+    right: 1em;
+  }
+  #nav-ul {
+    display: none;
   }
   .card-separate {
     display: flex;
@@ -375,6 +420,37 @@ footer {
     display: inline-flex;
     position: absolute;
     background-color: rgba(0, 0, 0, 0);
+  }
+
+  .card {
+    margin-bottom: 5em;
+  }
+
+  .p-card {
+    margin: 0;
+  }
+
+  #how-to-video iframe {
+    margin-left: 10%;
+    width: 80vw;
+    height: 60vh;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  form input {
+    margin: 0.5em 0.5em 1em 1em;
+    height: 45px;
+    width: 70%;
+  }
+  form button {
+    margin: 0.5em 0.5em 1em 1em;
+    height: 50px;
+    width: 50%;
+    
   }
 }
 
