@@ -22,7 +22,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 3rem;
 }
 
 nav .logo img {
@@ -55,11 +55,11 @@ nav ul li a:hover {
 }
 
 .hero {
-    color: #f2f2f2;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
     background-image: url("https://i1.wp.com/lavereda.com.ar/wp-content/uploads/2021/05/cuarteto-de-nos.jpg?zoom=1.25&fit=1004%2C565&ssl=1");
     background-blend-mode: multiply;
-    background-position: center auto;
+    background-position: center top;
     background-size: cover;
     text-align: center;
     padding: 10rem 0;
@@ -90,24 +90,41 @@ nav ul li a:hover {
     background-color: #e60039;
 }
 
+section > .container{
+
+}
+
+.discografia{
+    padding: 5rem 0;
+}
+
+.container h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
 .grilla {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
-    margin: 4rem 0;
+    gap: 1em;
+    margin-top: 1em;
 }
 
 .card {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 1rem;
     width: 300px;
 }
 
 .card-info{
     padding: 0.5rem;
+}
+
+.card-info h3{
+    margin: 0.5em 0
 }
 
 .card img {
@@ -120,10 +137,6 @@ nav ul li a:hover {
 .newsletter {
     background-color: #f2f2f2;
     padding: 5rem 0;
-}
-
-.newsletter h2 {
-    margin: 0 0 2rem;
 }
 
 .newsletter label {
@@ -202,6 +215,7 @@ footer p {
 
     .grilla {
         margin: 2rem 0;
+        flex-direction: column;
     }
 
     .card {
@@ -218,4 +232,6 @@ footer p {
     .newsletter button[type="submit"] {
         font-size: 0.9rem;
     }
+
+    
 }
