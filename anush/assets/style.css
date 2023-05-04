@@ -1,201 +1,316 @@
-/*-------------------GENERAL-------------------*/
-body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
-    margin: 20px 0;
-    color:grey;
-    width:90%;
+  /*-------------------GENERAL-------------------*/
+  body{
+      font-family: bodoni;
+      margin: 20px 0;
+      color:grey;
+      margin: 0 auto;
+  }
+  ul{
+    display: flex;
+    list-style: none;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  /*--------------FIN DE GENERAL--------------*/
+
+  #header {
+    background-image: url(img/gif\ hero.gif);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    padding-top: 1em;
+    z-index: 1;
+    background-attachment: fixed;
+  }
+  #header::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5); /* Establece el color de fondo con opacidad */
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Establece el z-index para que el pseudo-elemento se ubique detrás del contenido */
+  }
+  #chevron{
+    margin:18em;
+  }
+
+
+  /*-------------------MENÚ-------------------*/
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    font-weight: light;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent; /* Define un fondo transparente */
+    transition: background-color 0.5s ease-in-out; /* Agrega una transición al cambio de color de fondo */
+  }
+
+  .navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.6); /* Cambia el fondo al agregar la clase "scrolled" */
+  }
+  nav ul {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  nav li {
+    margin: 0;
+    text-transform: lowercase;
+    letter-spacing: 0.15em;
+    font-size: 1.2em;   
+    flex-grow: 1;
+    text-align: center;
+    padding: 0;
+  }
+  nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: rgb(255, 255, 255);
+    padding-bottom:0.3em;
+    border-bottom:2px solid white;
+  }
+  /*para ocultar color de fondo del nav hasta q pase a la siguiente section
+  también para ocultar btn de ver más cuando lo clickeo*/
+  .hidden{ 
+    display:none;
+  }
+  /*----------------FIN DE MENÚ----------------*/
+
+
+  /*----------------HERO----------------*/
+  #hero { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #hero .hero-content {
+    color: white;
+    padding: 12em 5em;
+    text-align: center;
+  }
+  #hero h1 {
+    font-size: 4em;
+    color:white;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #hero h3 {
+    color: #ccc;
+    font-weight: 500;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /*----------------FIN DE HERO----------------*/
+  
+  /*----------------CARD GRID----------------*/
+  #card-grid {
+    color: white;
     margin: 0 auto;
-    padding: 20px;
-}
-
-ul{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-li{
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-size: 1.2em;
-}
-
-h3{
-  margin-bottom: 1.5em;
-}
-/*--------------FIN DE GENERAL--------------*/
-
-
-
-/*-------------------MENÚ-------------------*/
-nav{
-  background: white;        
-  border-radius: 10px;
-  box-shadow: 0 0 5px 0 rgb(147, 169, 154);
-  text-align: center;
-  padding: 15px 30px;
-}
-
-nav a{
-  display: inline-block;
-  color: rgb(124, 141, 131);
-  text-decoration: none;
-}
-
-nav a:hover{
-  color:rgb(56, 94, 69);
-  text-decoration: underline;
-}
-
-a, span{
-  color:rgb(110, 138, 124);
-  text-decoration: none;
-}
-
-/*----------------FIN DE MENÚ----------------*/
-
-
-/*----------------HERO----------------*/
-.hero {
-  margin: 1em 0 0 0;
-  background-image: url(img/hero.png);
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  display: flex;
-  align-items: center;
-}
-  
-.hero-content {
-  margin-bottom: 22em;
-  color: white;
-  text-align: center;
-}
-  
-.hero h1 {
-  font-size: 3em;
-  font-weight: bolder;
-}
-/*----------------FIN DE HERO----------------*/
+    width:70%; 
+  }
+  .card-grid {
+    padding: 1em 1em 0 1em;
+    background-color: rgba(0, 0, 0, 0.5); 
+    /* border-radius: 2%; */
+    margin-bottom: 4em;
+  }
+  .display-grid{
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: repeat(4, 0fr); */
+  }
+  .video-background { /*fondo de section card-grid*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .card {
+    font-size: 1em;
+    padding: 1em;
+    margin:0 auto;
+  }
+  .card img{
+    border:1px solid white;
+    border-radius: 5%;
+    height:50vh;
+    aspect-ratio: 4/5;
+  }
+  .card-name {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+  }
+  #card-grid h3 {
+    text-align: center;
+    margin-top: 2.5em;
+    font-size: 2.5em;
+  }
+  .center-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .show-hide-btn{
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    border: none;
+    cursor: pointer;
+  }
+  .show-hide-btn :hover{
+    color: #999999;
+  }
+  /*----------------FIN DE CARD GRID----------------*/
 
 
-/*----------------CARD GRID----------------*/
-.card-title{
+  /*---------------NEWSLETTER--------------------*/
+  #nl {
+    height: 100vh;
+    display: flex;
+    width: 70%;
+    align-items: center;
+    margin: 0 auto;
+    
+  }
+  .nl-content{
+    margin-top: 4em;
+    background-color: white;
+    width: 50%;
+    padding: 4em 6em;
+    height:60vh;
+    justify-content: center;
+  }
+  #nl h3, #cta h3{ /*también CTA*/
     font-weight: bold;
-}
+    font-size: 2.5em;
+    margin: 0;
+    color:rgb(136, 80, 150);
+  }
+  #nl p, #cta p { /*también CTA*/
+    font-size: 1.3em;
+    color: #313045;
+    margin-bottom: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }  
+  #nl form {
+    text-align: center;
+  }
+  #nl input[type="email"] {
+    padding: 0.9em;
+    border: 1px solid #ccc;
+    width:100%;
+    margin-bottom: 0.8em;
+    font-size: 0.9em;
+  } 
+  .btn {  /*también el del CTA*/
+    background-color: rgb(136, 80, 150);
+    color: #fff;
+    border: none;
+    padding: 1.2em;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-align: center;
+    margin:0.8em;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  /*-----------------FIN DE NEWSLETTER---------------*/
 
-.row{
-    display:flex;
-}
 
-.card-title{
-    color:rgb(158, 162, 160);
-}
-
-#card-grid{
-    background-color: rgb(110, 138, 124);
-    padding: 3em;
-    color:white;    
-}
-
-#card-grid h3{
-  text-align: center;
-}
-/*----------------FIN DE CARD GRID----------------*/
-
-
-/*--------NEWSLETTER - CALL TO ACTION--------*/
-.botones{
-  display: flex;
-}
-
-.nl, .cta {
-  padding: 4em 3em;
-  background-color:rgb(212, 212, 212);
-  width: 50%;
-}
-
-.nl h3, .cta h3{
-  color:rgb(110, 138, 124);
-}
+  /*---------------CALL TO ACTION--------------------*/
+  #cta{
+    height:100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color:white;
+  }
+  .cta-content{
+    margin-top: 4em;
+    width: 50%;
+    padding: 7em 6em;
+    height:60vh;
+    justify-content: center;
+    
+  }
+  #cta p, #cta h3{
+    color:white;
+  }
+  #cta-btn {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+  }
   
-.nl p, .cta p {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 40px;
-}
-  
-.nl input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-}
-  
-.nl button[type="submit"], .cta-btn {
-  background-color: rgb(110, 138, 124);
-  color: #fff;
-  border: none;
-  padding: 12px 20px;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.cta {
-  background-color: #f2f2f2;
-}
-/*----FIN DE NEWSLETTER - CALL TO ACTION----*/
+  /*------------FIN DE CALL TO ACTION---------------*/
 
 
-/*----------------FOOTER----------------*/
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 3em 4.5em 1em 4.5em;
-  display: flex;
-  justify-content: space-between;
-}
-
-aside{
-  display: flex;
-}
-
-aside a span{
-  display: none;
-}
-
-aside a{
-  font-size: 2em;
-}
-
-aside ul{
-  padding-left: 20px;
-}
-
-#tiktok{
-    background:url("img/tiktok.png");
-    padding-left: 35px;
-    background-repeat: no-repeat;
-}
-
-#instagram{
-    background:url("img/instagram.png");
-    padding-left: 35px;
-    background-repeat: no-repeat;
-}
-#youtube{
-    background:url("img/youtube.png");
-    padding-left: 35px;
-    background-repeat: no-repeat;
-}
-/*----------------FIN DE FOOTER----------------*/
-
-  
-  
-  
+  /*----------------FOOTER----------------*/
+  footer {
+    background-color: rgb(41, 38, 42);
+    color: #fff;
+    padding: 3em 4.5em 1em 4.5em;
+    display: flex;
+    justify-content: space-between;
+  }
+  aside{
+    display: flex;
+  }
+  aside a span{
+    display: none;
+  }
+  aside a{
+    font-size: 2em;
+    color: white;
+  }
+  address{
+    margin-top:0.7em;
+  }
+  aside ul{
+    padding-left: 20px;
+  }
+  #tiktok{
+      background:url("img/tiktok.png");
+      padding-left: 35px;
+      background-repeat: no-repeat;
+  }
+  #instagram{
+      background:url("img/instagram.png");
+      padding-left: 35px;
+      background-repeat: no-repeat;
+  }
+  #youtube{
+      background:url("img/youtube.png");
+      padding-left: 35px;
+      background-repeat: no-repeat;
+  }
+  /*----------------FIN DE FOOTER----------------*/
